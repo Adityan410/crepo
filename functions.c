@@ -1,13 +1,12 @@
 #include<stdio.h>
+int  m1()
+{
+    printf("poda\n");
+    return;
+}
 void main()
 {
 
-   int m1(int);
-   int a= m1(3.5);
+ printf("%d",m1());
 
-}
-int  m1(int a)
-{
-    printf("%d\n",a);
-    return a;
 }
