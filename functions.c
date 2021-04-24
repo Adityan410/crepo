@@ -1,12 +1,17 @@
 #include<stdio.h>
-int  m1()
+int g;
+void abc()
 {
-    printf("poda\n");
-    return;
+  ++g;
+}
+void test()
+{
+    ++g;
 }
 void main()
 {
-
- printf("%d",m1());
-
+    ++g;
+    test();
+    abc();
+    printf("%d",g);
 }
